@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+:root {
+    --color_1: #FFFFFF;
+    --placeholder_color: #111729;
+    --button_color: #4036A9;
+}
+
+body {
+    background-image: url(resources/background.svg);
+    color: 
+}
+
+h1 {
+    font-size: 64px;
+}
+
+h2 {
+    font-size: 32px;
+}
+
+p {
+    font-size: 16px;
+}
