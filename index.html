@@ -4,8 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Page</title>
-    <link rel="stylesheet" href="style.css">
-    <img src="resources/background.svg" alt="desktop background image">
+    <link rel="stylesheet" href="styles.css">
+    <!--FONTS-->
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;700&display=swap" rel="stylesheet"/>
+
+
 </head>
 
 <body>
@@ -16,10 +19,10 @@
     <!--FORM PART OF THE PAGE -->
     <form action="submit_form.php" method="post" id="form">
         <p>Name</p>
-        <input type="text" name="username" size="15" maxlength="30" class="name"/>
+        <input type="text" name="username" size="15" maxlength="30" class="name" placeholder="Ethan Johnson"/>
         
         <p>Company Email</p>
-        <input type="email" name="email" class="email"/>
+        <input type="email" name="email" class="email" placeholder="ethan@johnson.com"/>
         
         <p>Company Size</p> 
         <select name="company_size" id="company_size">
@@ -37,11 +40,11 @@
         </select>
 
         <p>Message</p>
-        <textarea name="message" id="message" cols="40" rows="10">Write your message here.</textarea>
+        <textarea name="message" id="message" cols="40" rows="10" placeholder="Write your message here."></textarea>
 
         <button>Contact Sales</button>
     </form>
 
-    
+
 </body>
 </html>
