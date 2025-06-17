@@ -15,12 +15,33 @@
 
     <!--FORM PART OF THE PAGE -->
     <form action="submit_form.php" method="post" id="form">
-        <p>Name
-            <input type="text" name="username" size="15" maxlength="30" class="name"/>
-        </p>
-
+        <p>Name</p>
+        <input type="text" name="username" size="15" maxlength="30" class="name"/>
         
+        <p>Company Email</p>
+        <input type="email" name="email" class="email"/>
+        
+        <p>Company Size</p> 
+        <select name="company_size" id="company_size">
+            <option value="0-50">0-50 employees</option>
+            <option value="50-100">50-100 employees</option>
+            <option value="100-200">100-200 employees</option>
+            <option value="+200">+200 employees</option>
+        </select>
+
+        <p>Subject</p>
+        <select name="subject" id="subject">
+            <option value="landing_page">Building Landing pages</option>
+            <option value="instagram_posts">Instagram Posts</option>
+            <option value="other_option">Other Option (describe below)</option>
+        </select>
+
+        <p>Message</p>
+        <textarea name="message" id="message" cols="40" rows="10">Write your message here.</textarea>
+
+        <button>Contact Sales</button>
     </form>
 
+    
 </body>
 </html>
