@@ -11,23 +11,39 @@
     --button_color: #4036A9;
 }
 
+img {
+    margin-left: 70px; 
+    margin-top: 30px;
+    height: 50%; 
+}
 
 body {
     background-image: url(resources/background.svg);
     color: var(--color_1);
-    width: 100vw;
     height: 100vh;
     display: flex;
+    flex-direction: column;
 }
 
-h1 {
-    font-size: 64px;
-    
-
+h1 { /*DO NOT CHANGE HERE*/
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+    font-size: 4rem;
+    font-weight: 700;
+    color: white;
+    line-height: 1.2;
 }
 
-h2 {
-    font-size: 32px;
+
+h2 { /*DO NOT CHANGE HERE*/
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 2rem;
+    font-weight: 700;
+    color: white;
+    line-height: 1.2;
 }
 
 p {
