@@ -75,7 +75,6 @@ form {
 }
 
 
-
 h1 { /*DO NOT CHANGE HERE*/
     text-align: center;
     max-width: 600px;
@@ -102,3 +101,54 @@ p {
     margin-bottom: 0.5%;
 }
 
+/* DESKTOP SCREEN */
+@media (max-width: 1350px) {
+  .form-grid {
+    grid-template-columns: 1fr 1fr; 
+  }
+
+  .full-width {
+    grid-column: span 2;
+  }
+}
+
+/* TABLET SCREEN */
+@media (max-width: 1024px) {
+  .form-grid {
+    grid-template-columns: 1fr 1fr; 
+  }
+
+  h1 {
+    text-align: center;
+    max-width: 1024px;
+    margin: 0 auto;
+    font-weight: 700;
+    color: white;
+    line-height: 1.2;
+  }
+
+  .full-width {
+    grid-column: span 2;
+  }
+}
+
+/* PHONE SCREEN */
+@media (max-width: 412px) {
+  .form-grid {
+    grid-template-columns: 1fr; 
+  }
+
+  h1 {
+    text-align: center;
+    max-width: 412px;
+    margin: 0 auto;
+    font-size: 1rem;
+    font-weight: 700;
+    color: white;
+    line-height: 1.2;
+  }
+
+  .full-width {
+    grid-column: span 1;
+  }
+}
