@@ -12,15 +12,19 @@
 }
 
 img {
-    margin-left: 70px; 
-    margin-top: 20px;
-    height: 50%; 
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    height: auto;
 }
 
 body {
     background-image: url(resources/background.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
     color: var(--color_1);
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -33,7 +37,7 @@ form {
     padding: 20px;
     align-items: center;
     justify-content: center;
-    border-radius: 8px;
+    border-radius: 15px;
     max-width: 600px;
     width: 90%;
 }
@@ -78,7 +82,7 @@ form {
 h1 { /*DO NOT CHANGE HERE*/
     text-align: center;
     max-width: 600px;
-    margin: 0 auto;
+    margin-top: 5%;
     font-size: 4rem;
     font-weight: 700;
     color: white;
@@ -121,7 +125,7 @@ p {
   h1 {
     text-align: center;
     max-width: 1024px;
-    margin: 0 auto;
+    margin-top: 10%;
     font-weight: 700;
     color: white;
     line-height: 1.2;
@@ -135,20 +139,36 @@ p {
 /* PHONE SCREEN */
 @media (max-width: 412px) {
   .form-grid {
-    grid-template-columns: 1fr; 
-  }
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
 
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
   h1 {
     text-align: center;
     max-width: 412px;
-    margin: 0 auto;
+    margin-top: 15%;
     font-size: 1rem;
     font-weight: 700;
     color: white;
     line-height: 1.2;
   }
 
-  .full-width {
-    grid-column: span 1;
-  }
+    h2 { /*DO NOT CHANGE HERE*/
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: white;
+    line-height: 1.2;
+}
+
+  .form-group.full-width {
+  grid-column: span 1; /* makes message textarea span both columns */
+}
 }
